@@ -23,20 +23,7 @@ $ git clone <repository-url>
 $ cd flask-welcome-app
 ```
 
-2. Create and activate a virtual environment (optional but recommended):
-
-```bash
-# Create a virtual environment
-$ python -m venv venv
-
-# Activate the virtual environment
-# On Windows:
-$ venv\Scripts\activate
-# On macOS/Linux:
-$ source venv/bin/activate
-```
-
-3. Install the required dependencies:
+2. Install the required dependencies:
 
 ```bash
 $ pip install flask
@@ -73,21 +60,5 @@ Welcome, Vaishnavi!
 ## Code Structure
 
 - `app.py`: Contains the main Flask application code.
-
-### Example Code (`app.py`):
-
-```python
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/<name>')
-def welcome(name):
-    return f"Welcome, {name}!"
-
-if __name__ == "__main__":
-    app.run(debug=True)
-```
-
 
 Happy coding!
